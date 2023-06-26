@@ -6,5 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
+  <body>
+    <div class="left-col"></div>
+    <div class="fern"></div>
 
+    <header>
+      <a href="#"><img class="logo" src="logo.svg"/></a>
+      
+      <nav>
+        <svg class="menu" id="menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        
+          
+          <ul id="nav">
+              <li class="exit" id="exit-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+                      <g transform="translate(-378.092 -80.939)">
+                          <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#000" stroke-width="3"/>
+                          <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#000" stroke-width="3"/>
+                      </g>
+                  </svg>
+              </li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Browse</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="content-wrapper">
+      <main>
+          <h1>The tea for all occasions</h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+          
+          <div class="btn-container">
+              <a href="#" class="cta">Browse selection</a>
+              <a href="#" class="cta outline">About</a>
+          </div>
+      </main>
+      
+      <div class="plant-container">
+          <img src="/tea.png" class="plant">
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
