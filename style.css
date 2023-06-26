@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+}
+
+body {
+  background-color: #DBEAD8;
+  font-family: 'Montserrat';
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+.logo {
+  width: 70%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  padding: 1.5em 1.5em 0;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 2em;
+  cursor: pointer;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  display: none;
+  z-index: 1;
+}
+
+ul li a {
+  padding: 1.5em;
+  display: block;
+  font-size: 1.4em;
+}
+
+.active a {
+  color: #204218;
+}
+
+.exit svg {
+  width: 1.5em;
+  position: absolute;
+  top: 1em;
+  right: 6rem;
+  cursor: pointer;
+}
+
+.open-nav {
+  display: grid;
+}
+
+main {
+  padding: 1.5em;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  color: #204218;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.6em;
+  width: 95%;
+  background: #dbead846;
+}
+
+.cta {
+  display: block;
+  padding: 1em;
+  margin: 2em 0;
+  background-color: #88A96E;
+  width: fit-content;
+  border-radius: 2em;
+  font-size: 1em;
+  box-shadow: 5px 5px 10px 1px #00000042;
+}
+
+.outline {
+  background: #DBEAD8;
+  border: 2px solid #88A96E;
+}
+
+.plant {
+  width: 200px;
+  transform: rotate(20deg);
+}
+.plant-container {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+  .plant {
+    width: 250px;
+
+  }
+  .exit svg {
+    right: 7em;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+  .plant {
+    width: 300px;
+    margin-right: 2em;
+  }
+  nav {
+    padding: 1em 2em;
+  }
+  .content-wrapper {
+    padding: 2em;
+  }
+  h1 {
+    font-size: 3em;
+    padding: 0;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .menu, .exit {
+    display: none;
+  }
+  ul {
+      display: flex;
+      background: none;
+      height: unset;
+      position: unset;
+  }
+
+  ul li a {
+      font-size: 1em;
+      margin-left: unset;
+      padding: 0 .5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  .plant {
+    width: 30rem;
+    bottom: 0;
+
+  }
+  .left-col {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  main {
+    text-align: left;
+    width: 90%;
+  }
+  p {
+      width: 100%;
+  }
+  .content-wrapper {
+    display: flex;
+  }
+  .plant-container {
+    position: unset;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-content: center;
+
+  }
+  .plant {
+    position: unset;
+    margin: 0;
+  }
+}
